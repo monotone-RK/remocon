@@ -10,15 +10,11 @@ void setup() {
 }
  
 void waitIfLow() {
-  while (digitalRead(IR_INPIN) == LOW) {
-    ;  // waiting
-  }
+  while (digitalRead(IR_INPIN) == LOW);  // waiting
 }
  
 void waitIfHigh() {
-  while (digitalRead(IR_INPIN) == HIGH) {
-    ;  // waiting 
-  }  
+  while (digitalRead(IR_INPIN) == HIGH);  // waiting
 } 
 
 int waitByTime() {
